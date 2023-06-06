@@ -1,0 +1,42 @@
+body {
+    text-align: center;
+}
+
+.ttt {
+    text-align: center;
+    margin: 0 auto;
+    margin-top: 40px;
+    background-color: lavender;
+    border: 1px solid #000;
+   border-spacing: 1px 5px;
+}
+
+thead {
+    background-color: darkorange;
+}
+
+th{
+    padding: 5px;
+    border-radius: 10px;
+}
+
+td{
+    border: 2px solid #000;
+    padding: 2px;
+    border-radius: 5px;
+}
+
+.tr1,
+.tr2,
+.tr3 {
+    background-color: thistle;
+}
+
+.td1,
+.td2,
+.td3 {
+    background-color: lightgray;
+    border-style: dotted;
+    border-radius: 25px;
+}
+

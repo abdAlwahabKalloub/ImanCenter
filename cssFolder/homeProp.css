@@ -1,0 +1,35 @@
+body {
+    text-align: center;
+    font-size: larger;
+}
+
+div.ayat {
+
+    border: 1px dotted #000;
+    background-color: palegoldenrod;
+    width: 930px;
+    margin: 0 auto;
+    margin-top: 40px;
+    height: 330px;
+}
+
+@font-face {
+    font-family: 'font1';
+    src: url('../fonts/decotype-thuluth-ii.ttf');
+}
+
+@font-face {
+    font-family: 'font2';
+    src: url('../fonts/Othmani.ttf');
+}
+
+p.p1,
+p.p3 {
+    font-size: x-large;
+    font-family: "font1";
+}
+
+p.p2 {
+    font-size: x-large;
+    font-family: "font2";
+}

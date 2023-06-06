@@ -1,0 +1,61 @@
+body {
+    margin: 10px;
+    text-align: right;
+}
+
+.container {
+    padding: 20px;
+   
+    background-color: linen;
+}
+
+@font-face {
+    font-family: 'font1';
+    src: url('../fonts/decotype-thuluth-ii.ttf');
+}
+
+@font-face {
+    font-family: 'font2';
+    src: url('../fonts/Othmani.ttf');
+}
+
+h2 {
+    border: 3px inset #000;
+    width: 80px;
+    background-color: #aaa;
+    padding: 5px;
+    margin: 40px 0px 20px auto;
+    border-radius: 7px;
+}
+
+span.span1 {
+    font-family: 'font1';
+}
+
+b.b1 {
+    font-family: 'font2';
+}
+
+ul {
+    list-style-type: square;
+    list-style-position: inside;
+    text-align: right;
+
+}
+
+li.l1 {
+    float: right;
+}
+
+dd ul p {
+    margin: 10px 50px 0px 0px;
+}
+
+dd{
+    font-size: 25px;
+}
+
+mark{
+    border: 1px solid yellow;
+    border-radius: 10px;
+}

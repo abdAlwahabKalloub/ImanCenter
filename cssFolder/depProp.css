@@ -1,0 +1,96 @@
+body {
+    text-align: right;
+}
+
+h3 {
+    color: blue;
+    font-size: 25px;
+}
+
+h2{
+    margin-right: 10px;
+    font-size: 25px;
+}
+
+h3.h3a{
+    color: deeppink;
+    margin-right: 20px;
+    margin-top: 10px;
+}
+
+
+.container {
+    background-color: #cba;
+    min-height: 100vh;
+    border: 3px solid #000;
+    width: 80%;
+    margin: 30px auto;
+    text-align: center;
+}
+
+.box {
+    border-radius: 10px;
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 0px;
+    border: 2px dashed #000;
+    margin: 10px;
+    padding: 10px;
+    height: 243px;
+    max-width: calc(50% - 50px);
+   
+}
+
+ 
+.box .divH {
+    background-color: #fff;
+    border-radius: 10px;
+    margin: 5px 5px 10px 5px;
+    padding: 2px;
+    font-size: 25px;
+}
+
+.box .divC {
+    height: 190px;
+    font-size: 25px;
+    overflow: auto;
+}
+
+.b1,
+.b3,
+.b5 {
+    margin-right: 0;
+} 
+
+.b1,
+.b2 {
+    display: inline-block;
+    margin-top: 40px;
+}
+
+.b3,
+.b4 {
+    display: inline-block;
+    margin-top: 40px;
+}
+ 
+.b5,
+.b6 {
+    display: inline-block;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+.b5 .divC p,
+.b6 .divC p{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+@font-face {
+    font-family: 'font1';
+    src: url('../fonts/decotype-thuluth-ii.ttf');
+}
+
+
+.b3 .divC span{
+    font-family: 'font1';
+}

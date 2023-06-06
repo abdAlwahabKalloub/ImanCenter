@@ -1,0 +1,112 @@
+.field1,
+.field2 {
+    background-color: rgba(68, 65, 65, 0.296);
+    text-align: right;
+    padding: 30px 20px 20px 0px;
+    font-size: larger;
+}
+
+.field2 {
+    padding-top: 10px;
+}
+
+textarea{
+    padding: 10px;
+    height: 150px;
+    width: 400px;
+    border: 2px inset #000;
+    text-align: right;
+}
+
+
+input,
+.grade {
+    border: 2px solid #000;
+    padding: 5px;
+    height: 25px;
+    border-radius: 7px;
+    transition-property: background-color;
+    transition-duration: 1s;
+    background-repeat: no-repeat;
+    text-align: right;
+    background-position: left;
+    font-size: 16px;
+}
+
+input[type="text"]:focus,
+input[type="number"]:focus,
+input[type="date"]:focus,
+input[type="radio"]:focus,
+input[type="tel"]:focus,
+input[type="file"]:focus,
+.grade:focus {
+    background-color: lightcoral;
+    cursor: auto;
+}
+ 
+.grade {
+    width: 200px;
+    height: 30px;
+    background-image: url("../images/grade.png");
+    background-size: 60px;
+    font-size: 16px;
+} 
+
+input.name {
+    background-image: url("../images/name.png");
+    background-size: 35px;
+}
+
+input.id {
+    background-image: url("../images/id.png");
+    background-size: 55px;
+   
+}
+
+input.bod {
+    background-image: url("../images/bod.png");
+    background-size: 38px;
+    width: 180px;
+    height: 30px;
+}
+
+input.address {
+    background-image: url("../images/address.jpeg");
+    background-size: 40px;
+}
+
+input.job {
+    background-image: url("../images/job.png");
+    background-size: 70px;
+}
+
+input.mobile {
+    background-image: url("../images/phone.png");
+    background-size: 45px;
+}
+
+input.numbers {
+    background-image: url("../images/family.png");
+    background-size: 60px;
+}
+
+.control {
+    border: 2px dashed #000;
+    background-color: lightblue;
+    font-size: x-large;
+    padding: 10px;
+    border-radius: 7px;
+    height: 60px;
+    display: inline-block;
+    margin-right: 300px;
+    transition-property: border, color, background-color;
+    transition-duration: 1s, 1s, 1s;
+
+}
+
+.control:hover {
+    border: 2px solid red;
+    color: lightblue;
+    background-color: #000;
+    transform: scale(1.2);
+}

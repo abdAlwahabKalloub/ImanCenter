@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>صفحة تسجيل الطلبة الجدد</title>
+    <link href="cssFolder/EnrollProp.css" rel="StyleSheet">
+    <link href="cssFolder/commonProp.css" rel="StyleSheet">
+    <script>
+        window.addEventListener('beforeunload', function (event) {
+            event.preventDefault();
+            var confirmation = 'Are you sure you want to leave this page? Your changes may not be saved.';
+            event.returnValue = confirmation;
+            return confirmation;
+        });
+
+
+        // document.addEventListener('DOMContentLoaded', function () {
+        //     var form = document.getElementById('myForm');
+
+        //     // Attach event listener to the form
+        //     form.addEventListener('reset', function (event) {
+        //         event.preventDefault(); // Prevent form reset
+
+        //         // Display confirmation message
+        //         var confirmMessage = confirm('Are you sure you want to reset the form?');
+
+        //         if (confirmMessage) {
+        //             // If user confirms, reset the form programmatically
+        //             form.reset();
+        //         }
+        //     });
+        // });
+    </script>
+</head>
+
+<body>
+    <img id="img1" src="images/flogo.png" width="270px" height="150px">
+    <h1>أهلاً بك في الصفحة الخاصة بالطلاب الجدد<br />أهلاً وسهلاً
+    </h1>
+
+
+    <div class="big">
+
+        <a href="about.html">
+            <li class="pages">تواصل معنا</li>
+        </a>
+        <a href="planTable.html">
+            <li class="pages">خطة الحفظ</li>
+        </a>
+        <a href="objectives.html">
+            <li class="pages">صفحة الأهداف</li>
+        </a>
+        <a href="departments.html">
+            <li class="pages">صفحة الأقسام</li>
+        </a>
+        <a href="home.html">
+            <li class="pages">الصفحة الرئيسية</li>
+        </a>
+
+    </div>
+
+    <form id="myForm">
+        <br />
+        <fieldset class="field1">
+            <legend> <i><b>طلب انضمام لحلقة تحفيظ</b></i></legend>
+
+            <label>
+                <input id="name" class="name" type="text" name="name" maxlength="30" size="30" required="required"
+                    placeholder="أدخل اسمك" />
+                <b>:إسم الطالب</b>
+            </label><br /><br />
+
+            <label>
+                <input class="id" type="number" name="id" maxlength="10" size="30" required="required"
+                    placeholder="أدخل رقم الهوية" />
+                <b>:رقم هوية الطالب</b>
+            </label><br /><br />
+
+            <label>
+                <input class="bod" type="date" name="date" maxlength="30" size="30" required="required" />
+                <b>:تاريخ الميلاد</b>
+            </label><br /><br />
+
+            <label>
+
+                <b>المرحلة</b>
+                <input class="stage" type="radio" name="stage" value="first" id="r1" /> <label for="r1">المرحلة
+                    الإبتدائية</label>
+                <input class="stage" type="radio" name="stage" value="second" id="r2" /> <label
+                    for="r2">المرحلةالإعدادية</label>
+                <input class="stage" type="radio" name="stage" value="third" id="r3" /> <label for="r3">المرحلة
+                    الثانوية</label>
+
+            </label><br /><br />
+
+
+            <label>
+                <select class="grade" name="grade" required="required">
+                    <option value="selection"> اختر الصف الدراسي</option>
+                    <option value="one">الصف الأول</option>
+                    <option value="two">الصف الثاني</option>
+                    <option value="three">الصف الثالث</option>
+                    <option value="four">الصف الرابع</option>
+                    <option value="five">الصف الخامس</option>
+                    <option value="six">الصف السادس</option>
+                    <option value="seven">الصف السابع</option>
+                    <option value="eight">الصف الثامن</option>
+                    <option value="nine">الصف التاسع</option>
+                    <option value="ten">الصف العاشر</option>
+                    <option value="eleven">الصف الحادي عشر</option>
+                    <option value="twelev">الصف الثاني عشر</option>
+                </select>
+                <b>:الصف الدراسي</b>
+            </label><br /><br />
+
+            <label>
+                <input class="address" type="text" name="address" maxlength="30" size="30" required="required"
+                    placeholder="أدخل عنوان السكن" />
+                <b>:عنوان السكن</b>
+            </label><br /><br />
+
+            <label>
+                <input class="job" type="text" name="job" maxlength="30" size="30" required="required"
+                    placeholder="أدخل وظيفة ولي الأمر" />
+                <b>:مهنة ولي الأمر</b>
+            </label><br /><br />
+
+            <label>
+                <input class="mobile" type="tel" name="mobile" maxlength="30" size="30" required="required"
+                    placeholder="أدخل رقم الجوال" />
+                <b>:رقم جوال ولي الأمر</b>
+            </label><br /><br />
+
+            <label>
+                <input class="numbers" type="number" name="numbers" maxlength="30" size="50" required="required"
+                    placeholder="أدخل عدد أفراد أسرتك" />
+                <b>:عدد أفراد الأسرة</b>
+            </label><br /><br />
+
+            <lablel><input class="studentImage" type="file" name="studentImage" /> </lablel>
+            <b>:(اختياري) إرفاق صورة للطالب </b><br /><br />
+
+            <label>
+                <textarea class="extraDet" name="textArea" cols="40" rows="15" placeholder="يمكنك إضافة تفاصيل أخرى عن الطالب"></textarea>   
+                <b class="bbb">:نبذة تعريفية عن الطالب(اختياري)</b>
+            </label><br />
+
+        </fieldset>
+        <br />
+
+        <fieldset class="field2">
+            <legend><b>التحكم</b></legend>
+            <input class="control" type="reset" name="reset" value="مسح المحتوى"  />
+
+            <input class="control" type="submit" name="submit" value="حفظ وإرسال" />
+        </fieldset>
+
+        
+        <br /><br />
+    </form>
+</body>
+
+</html>
